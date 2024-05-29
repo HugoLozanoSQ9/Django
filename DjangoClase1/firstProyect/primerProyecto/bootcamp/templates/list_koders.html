@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div>
+        <!-- Tag de koders -->
+        {% for koder in koders %}
+
+        <h1> name: {{koder.name}} </h1>
+        <p> generation: {{koder.generation}} </p>
+        <p> bootcamp: {{koder.bootcamp}} </p>
+
+
+        <!-- Tag de if's -->
+        {% if koder.is_active %}
+
+            <p style="color:green">Esta activo: {{koder.is_active}}</p>
+
+        {% else %}
+            <p style="color:red">Esta activo: {{koder.is_active}}</p>
+
+        {% endif %}
+
+        {% endfor %}
+
+
+    </div>
+
+
+</body>
+
+</html>
