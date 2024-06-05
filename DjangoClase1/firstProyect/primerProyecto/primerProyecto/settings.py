@@ -69,7 +69,6 @@ TEMPLATES = [
         },
     },
 ]
-print('Los templates se encuentran aqui',BASE_DIR)
 
 WSGI_APPLICATION = 'primerProyecto.wsgi.application'
 

@@ -45,7 +45,7 @@ def list_koders(req):
         ]
     }
 
-    template = loader.get_template('bootcamp/templates/list_koders.html')
+    template = loader.get_template('templates/list_koders.html')
 
 
     return HttpResponse(template.render(context,req))
